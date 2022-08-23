@@ -1,0 +1,71 @@
+.footer{
+    background: #000;
+    max-height: 268px;
+    color: #fff;
+    
+    
+
+    .container{
+        padding: 80px 70px;
+        margin: 0 auto;
+        justify-content: center;
+        text-align: center;
+    }
+
+    h3{
+        font-family: 'Josefin Sans', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+    }
+
+    p{
+        font-family: 'Josefin Sans', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2em;
+        margin-bottom: 20px;
+    }
+
+    .icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .icon:nth-child(1){
+            fill: #fff;
+            width: 20px;
+            height: 32px;
+        }
+
+        .icon:nth-child(2){
+            fill: #fff;
+            width: 32px;
+            height: 32px;
+        }
+
+        .icon:nth-child(3){
+            fill: $AcentColor; 
+            width: 28px;
+            height: 32px;
+        }
+
+        .icon:nth-child(4){
+            fill: #fff;
+            width: 36px;
+            height: 32px;            
+        }
+
+        .icon:nth-child(5){
+            fill: #fff;
+            width: 31px;
+            height: 32px;
+        }
+
+    }
+}

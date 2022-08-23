@@ -1,0 +1,583 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aleo&family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aleo&family=Josefin+Sans:wght@300;400&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+  line-height: 1;
+  transition: all 0.1s ease-in;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.header {
+  background-image: url("../img/HeaderBackground.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: "Josefin Sans", sans-serif;
+  height: 100vh;
+  padding-top: 235px;
+  color: #fff;
+  text-align: center;
+}
+.header h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 52px;
+  padding-left: 38px;
+  padding-right: 37px;
+}
+.header h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0.31em;
+  padding: 0 11px;
+  margin-bottom: 24px;
+  align-items: center;
+}
+.header .search-form {
+  position: relative;
+  padding: 0 12px;
+  margin-bottom: 160px;
+}
+.header .search-form input {
+  min-width: 350px;
+  height: 60px;
+  padding-left: 13px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  color: #999999;
+}
+.header .search-form button {
+  display: flex;
+  align-items: flex-start;
+  position: absolute;
+  height: 52px;
+  width: 119px;
+  gap: 3px;
+  padding: 16px 10px;
+  left: 240px;
+  top: 4px;
+  background-color: #5373FD;
+  color: #fff;
+  border: none;
+}
+.header .search-form .icon {
+  width: 16px;
+  height: 16px;
+  margin: 0 auto;
+  fill: #fff;
+}
+.header .search-form span {
+  font-family: "Aleo", serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+.header .scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header .scroll span {
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+.header .scroll .icon {
+  fill: #fff;
+  width: 14px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.navigation {
+  min-height: 84px;
+  background-color: #5373FD;
+  color: #fff;
+}
+.navigation .container {
+  min-height: 84px;
+  flex-direction: row;
+  margin: 0 auto;
+  align-items: center;
+  position: relative;
+  display: flex;
+}
+.navigation .main-menu {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.navigation h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 0 auto;
+  text-align: center;
+}
+.navigation .menu-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 24px;
+  right: 20px;
+  top: 27px;
+  position: absolute;
+  z-index: 1;
+}
+.navigation .menu-button .menu-button_item {
+  background-color: #fff;
+  width: 40px;
+  height: 2px;
+  position: absolute;
+  right: 0;
+}
+.navigation .menu-button .menu-button_item::before,
+.navigation .menu-button .menu-button_item::after {
+  content: "";
+  background-color: #fff;
+  width: 40px;
+  height: 2px;
+}
+.navigation .menu-button .menu-button_item::before {
+  position: absolute;
+  top: -11px;
+  right: 0px;
+}
+.navigation .menu-button .menu-button_item::after {
+  position: absolute;
+  bottom: -11px;
+  right: 0px;
+}
+.navigation .menu-button:active .menu-button_item {
+  background-color: transparent;
+  transition: all 0.01s ease 0.15s;
+}
+.navigation .menu-button:active .menu-button_item::before {
+  top: 0;
+  transform: rotate(45deg);
+  transition: top 0.15s ease, transform 0.15s ease 0.16s;
+}
+.navigation .menu-button:active .menu-button_item::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+  transition: bottom 0.15s ease, transform 0.15s ease 0.16s;
+}
+.navigation .menu-button:active .main-menu {
+  bottom: 0;
+}
+
+.why {
+  background-image: url("../img/WhyBackground.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+.why .container {
+  padding: 40px 10px;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+}
+.why .image {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+.why .image #img-1 {
+  width: 170px;
+  height: 90px;
+}
+.why .image #img-2 {
+  width: 170px;
+  height: 90px;
+}
+.why h2 {
+  font-family: "Aleo", serif;
+  font-size: 30px;
+  line-height: 40px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.why p {
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  margin-bottom: 24px;
+}
+.why .why-button {
+  background-color: #5373FD;
+  color: #fff;
+  border: none;
+  width: 213px;
+  height: 60px;
+  cursor: pointer;
+}
+.why .why-button .div {
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid #486BFE;
+  border-right: 100px solid transparent;
+}
+.why .why-button span {
+  font-family: "Aleo", serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.steps {
+  background-color: #232323;
+  color: #fff;
+}
+.steps .container {
+  padding: 60px 18px;
+  font-family: "Aleo", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.steps .container li {
+  margin-bottom: 60px;
+}
+.steps .icon {
+  width: 64px;
+  height: 64px;
+}
+.steps .steps-item-search .icon {
+  fill: #5373FD;
+}
+.steps .steps-item-select .icon {
+  fill: #FF6363;
+}
+.steps .steps-item-book .icon {
+  fill: #00A2FF;
+}
+
+.first-info {
+  min-height: 616px;
+  background-image: url("../img/first-info_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 120px 18px;
+  color: #fff;
+}
+.first-info .container {
+  min-height: 376px;
+  background-color: rgba(35, 35, 35, 0.9);
+  padding: 44px 32px;
+}
+.first-info h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  margin-bottom: 16px;
+}
+.first-info h4 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.first-info p {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  margin-bottom: 28px;
+}
+.first-info .book-button {
+  background-color: #5373FD;
+  color: #fff;
+  border: none;
+  width: 213px;
+  height: 60px;
+  cursor: pointer;
+}
+.first-info .book-button span {
+  font-family: "Aleo", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.second-info {
+  min-height: 616px;
+  background-image: url("../img/second-info_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 120px 18px;
+  color: #fff;
+}
+.second-info .container {
+  min-height: 376px;
+  background-color: rgba(35, 35, 35, 0.9);
+  padding: 44px 32px;
+}
+.second-info h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  margin-bottom: 16px;
+}
+.second-info h4 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.second-info p {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  margin-bottom: 28px;
+}
+.second-info .book-button {
+  background-color: #5373FD;
+  color: #fff;
+  border: none;
+  width: 213px;
+  height: 60px;
+  cursor: pointer;
+}
+.second-info .book-button span {
+  font-family: "Aleo", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.comments {
+  background-image: url("../img/comment-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+.comments .container {
+  padding: 60px 18px;
+}
+.comments h2 {
+  font-family: "Aleo", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 60px;
+}
+.comments .content {
+  background-color: #333333;
+}
+.comments .content img {
+  width: 340px;
+  height: 230px;
+}
+.comments .text {
+  padding: 24px 30px;
+}
+.comments .text h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.comments .text p {
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+}
+.comments .text p::before {
+  content: url("../img/icons/quotation.svg");
+}
+
+.footer {
+  background: #000;
+  max-height: 268px;
+  color: #fff;
+}
+.footer .container {
+  padding: 80px 70px;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+}
+.footer h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.footer p {
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2em;
+  margin-bottom: 20px;
+}
+.footer .icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer .icons .icon:nth-child(1) {
+  fill: #fff;
+  width: 20px;
+  height: 32px;
+}
+.footer .icons .icon:nth-child(2) {
+  fill: #fff;
+  width: 32px;
+  height: 32px;
+}
+.footer .icons .icon:nth-child(3) {
+  fill: #5373FD;
+  width: 28px;
+  height: 32px;
+}
+.footer .icons .icon:nth-child(4) {
+  fill: #fff;
+  width: 36px;
+  height: 32px;
+}
+.footer .icons .icon:nth-child(5) {
+  fill: #fff;
+  width: 31px;
+  height: 32px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,101 @@
+.navigation{
+    min-height: 84px;
+    background-color: $AcentColor;
+    color: #fff;
+
+    .container{
+        min-height: 84px;
+        flex-direction: row;
+        margin: 0 auto;
+        align-items: center;
+        position: relative;
+        display: flex;
+    }
+
+    .main-menu{
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        border: 0;
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
+
+    h2{
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .menu-button{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        width: 40px;
+        height: 24px;
+        right: 20px;
+        top: 27px;
+        position: absolute;
+        z-index: 1;
+
+        .menu-button_item{
+            background-color: #fff;
+            width: 40px;
+            height: 2px;
+            position: absolute;
+            right: 0;
+        }
+
+        .menu-button_item::before, 
+        .menu-button_item::after{
+            content: '';
+            background-color: #fff;
+            width: 40px;
+            height: 2px;
+        }
+        
+        .menu-button_item::before{
+            position: absolute;
+            top: -11px;
+            right: 0px;
+        }
+
+        .menu-button_item::after{
+            position: absolute;
+            bottom: -11px;
+            right: 0px;
+        }
+    }
+
+    .menu-button:active{
+        .menu-button_item{
+            background-color: transparent;
+            transition: all .01s ease .15s;
+        }
+
+        .menu-button_item::before {
+            top: 0;
+            transform: rotate(45deg);
+            transition: top .15s ease, transform .15s ease .16s;
+          }
+      
+          .menu-button_item::after {
+            bottom: 0;
+            transform: rotate(-45deg);
+            transition: bottom .15s ease, transform .15s ease .16s;
+          }
+        .main-menu{
+            bottom: 0;
+        }
+    }
+}

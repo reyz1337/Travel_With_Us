@@ -1,0 +1,57 @@
+.comments{
+    background-image: url('../img/comment-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+
+    .container{
+        padding: 60px 18px;
+    }
+
+    h2{
+        font-family: 'Aleo', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 40px;
+        text-align: center;
+        text-transform: capitalize;
+        margin-bottom: 60px;
+    }
+
+    .content{
+        background-color: #333333;
+
+        img{
+            width: 340px;
+            height: 230px;
+        }
+    } 
+
+    .text{
+        padding: 24px 30px;
+
+        h3{
+            font-family: 'Josefin Sans', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 28px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        p{
+            font-family: 'Josefin Sans', sans-serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 28px;
+            letter-spacing: 0.1em;
+        }
+        
+        p::before{
+            content: url('../img/icons/quotation.svg');
+        }
+    }
+}

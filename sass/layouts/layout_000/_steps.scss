@@ -1,0 +1,42 @@
+.steps{
+    background-color: $DarkGreyBg;
+    color: #fff;
+
+    .container{
+      padding: 60px 18px;
+      font-family: 'Aleo', serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 40px;
+      text-align: center;
+      text-transform: capitalize;
+
+      li{
+        margin-bottom: 60px;
+      }
+    }
+
+    .icon{
+        width: 64px;
+        height: 64px;
+    }
+
+    .steps-item-search{
+        .icon{
+            fill: $AcentColor;
+        }
+    }
+
+    .steps-item-select{
+        .icon{
+            fill: #FF6363;
+        }
+    }
+
+    .steps-item-book{
+        .icon{
+            fill: #00A2FF;
+        }
+    }
+}

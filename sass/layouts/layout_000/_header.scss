@@ -1,0 +1,102 @@
+.header{ 
+    background-image: url('../img/HeaderBackground.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Josefin Sans', sans-serif;
+    height: 100vh;
+    padding-top: 235px;
+    color: #fff;
+    text-align: center;
+    
+    h2{
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 52px;
+        padding-left: 38px;
+        padding-right: 37px;
+    }
+
+    h3{
+        font-family: 'Josefin Sans', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 28px;
+        letter-spacing: 0.31em;
+        padding: 0 11px;
+        margin-bottom: 24px;
+        align-items: center;
+    }
+
+    .search-form{
+        position: relative;
+        padding: 0 12px;
+        margin-bottom: 160px;
+        input{
+            min-width: 350px;
+            height: 60px;
+            padding-left: 13px;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: 0.1em;
+            color: #999999;
+            
+        }
+        button{       
+            display: flex;
+            align-items: flex-start;
+            position: absolute;
+            height: 52px;
+            width: 119px;
+            gap: 3px;
+            padding: 16px 10px;
+            left: 240px;
+            top: 4px;
+            background-color: $AcentColor;
+            color: #fff;
+            border: none;
+        }
+        .icon{
+            width: 16px;
+            height: 16px;
+            margin: 0 auto;
+            fill: #fff;
+        }
+        span{
+            font-family: 'Aleo', serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin: 0 auto;
+        }
+    }
+
+    .scroll{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+
+        span{ 
+            font-family: 'Josefin Sans', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 20px;
+            text-align: center;
+            letter-spacing: 0.2em;
+        }
+
+        .icon{
+            fill: #fff;
+            width: 14px;
+            height: 16px;
+            cursor: pointer;
+        }
+    }
+
+}

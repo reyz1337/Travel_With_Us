@@ -1,0 +1,61 @@
+.first-info{
+    min-height: 616px;
+    background-image: url('../img/first-info_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 120px 18px;
+    color: #fff;
+
+    .container{
+        min-height: 376px;
+        background-color: rgba(35, 35, 35, 0.9);
+        padding: 44px 32px; 
+    }
+
+    h3{
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: 0.1em;
+        margin-bottom: 16px;
+    }
+
+    h4{
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        text-transform: uppercase;
+        margin-bottom: 16px;   
+    }
+
+    p{
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.1em;
+        margin-bottom: 28px;
+    }
+
+    .book-button{
+        background-color: $AcentColor;
+        color: #fff;
+        border: none; 
+        width: 213px;
+        height: 60px;
+        cursor: pointer;
+
+        span{
+            font-family: 'Aleo', serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+        }
+    }
+}
